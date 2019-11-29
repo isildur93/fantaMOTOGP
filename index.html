@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?!= include('stylesheet'); ?>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <base target="_top">
+</head>
+
+<body>
+    <div style="text-align:center">
+       
+    </div>
+    <!-- The App Section -->
+    <div class="container">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Fanta MotoGp App</b></h1>
+                <h1 class="large-font" style="color:MediumSeaGreen;"></h1>
+                <p><span style="font-size:36px">Inserisci i risultati delle gare nel foglio che troverai <a href='https://docs.google.com/spreadsheets/d/19IUFm5n4lpD8LiVp1SkXrVHJNOg_JL0xFAAb5cfvICI/edit?usp=sharing'>qui,</a> automaticamente verranno aggiornati in questa pagina!</span>
+                </div>
+            <div class="column-33"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Moto_Gp_logo.svg/1280px-Moto_Gp_logo.svg.png" width="335" height="471"> </div>
+        </div>
+    </div>
+    <!-- Clarity Section -->
+    <div class="container" style="background-color:#f1f1f1">
+        <div class="row">
+            <div class="column-33"> <img src="https://cdn.newsapi.com.au/image/v1/bd7d17e0a3dd7b975f41356f93171b8a" alt="App" width="335" height="471"> </div>
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Ranking</b></h1>
+                <h3>Claudio</h3>
+                <div class="table-responsive"><table class="table">
+    <? for (var i = 0; i < claudio.length; i++) { ?>
+        <tr>
+            <? for (var j = 0; j < claudio[i].length; j++) { ?>
+                <td>
+                    <?= claudio[i][j] ?>
+                </td>
+                <? } ?>
+        </tr>
+        <? } ?>
+</table></div>
+ <h3>Salvatore</h3>
+<div class="table-responsive"><table class="table">
+    <? for (var i = 0; i < salvatore.length; i++) { ?>
+        <tr>
+            <? for (var j = 0; j < salvatore[i].length; j++) { ?>
+                <td>
+                    <?= salvatore[i][j] ?>
+                </td>
+                <? } ?>
+        </tr>
+        <? } ?>
+</table></div>
+                            </div>
+        </div>
+    </div>
+    <!-- The App Section -->
+    <div class="container">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>MotoGp Ranking</b></h1>
+                <h1 class="large-font" style="color:MediumSeaGreen;"><b><?=new Date()?></b></h1>
+               <div class="table-responsive"><table class="table">
+    <? for (var i = 0; i < ranking.length; i++) { ?>
+        <tr>
+            <? for (var j = 0; j < ranking[i].length; j++) { ?>
+                <td>
+                    <?= ranking[i][j] ?>
+                </td>
+                <? } ?>
+        </tr>
+        <? } ?>
+</table></div>
+            </div>
+            <div class="column-33"> <img src="https://cdn2.bigcommerce.com/server1500/ac84d/products/846/images/1807/Yamaha_-_Logo_%2526_Name__23384.1324798828.380.380.jpg?c=2" width="335" height="471"> </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
